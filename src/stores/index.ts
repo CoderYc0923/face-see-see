@@ -6,5 +6,6 @@ export const useStore = defineStore({
   state: () => ({
     // light || dark
     mode: '',
+    arModel: ''
   }),
 })
