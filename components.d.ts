@@ -7,11 +7,13 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
+    BaseNavBar: typeof import('./src/components/BaseNavBar.vue')['default']
     CenterCell: typeof import('./src/components/natalChart/centerCell.vue')['default']
     CenterInfoBox: typeof import('./src/components/natalChart/centerInfoBox.vue')['default']
     Chart: typeof import('./src/components/chart/index.vue')['default']
     CoinYang: typeof import('./src/components/coin/coinYang.vue')['default']
     CoinYin: typeof import('./src/components/coin/coinYin.vue')['default']
+    MenuBar: typeof import('./src/components/MenuBar.vue')['default']
     NatalChart: typeof import('./src/components/natalChart/index.vue')['default']
     PalaceCell: typeof import('./src/components/natalChart/palaceCell.vue')['default']
     VanButton: typeof import('vant/es')['Button']

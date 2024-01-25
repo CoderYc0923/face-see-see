@@ -1,6 +1,12 @@
 :root:root {
-  --van-floating-bubble-z-index: 99;
   --van-overlay-z-index: 100;
+  --van-overlay-background: rgba(0, 0, 0, 0.1);
+  --van-floating-bubble-z-index: 99;
+  --van-floating-bubble-size: 24px;
+  --van-floating-bubble-icon-size: 36px;
+  --van-floating-bubble-background: black;
+  --van-cell-group-title-color: #dbebe1;
+  --van-cell-text-color: #dbebe1;
 }
 #app {
   height: 100%;
@@ -28,4 +34,16 @@ body {
   /*兼容 IOS<11.2*/
   padding-bottom: env(safe-area-inset-bottom);
   /*兼容 IOS>11.2*/
+}
+/* 隐藏垂直滚动条 */
+::-webkit-scrollbar {
+  display: none;
+}
+/* 针对Firefox */
+html {
+  scrollbar-width: none;
+}
+/* 针对IE和Edge */
+body {
+  -ms-overflow-style: none;
 }

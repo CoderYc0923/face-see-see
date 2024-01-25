@@ -4,20 +4,23 @@ import { useStore } from '@/stores'
 import { localStorage } from '@/utils/local-storage'
 
 const store = useStore()
-const theme = ref<ConfigProviderTheme>('light')
+const theme = ref<ConfigProviderTheme>('dark')
 const mode = computed(() => store.mode)
 
 watch(mode, (val) => {
-  if (val === 'dark' || localStorage.get('theme') === 'dark') {
-    theme.value = 'dark'
-    document.querySelector('html')
-      .setAttribute('data-theme', 'dark')
-  }
-  else {
-    theme.value = 'light'
-    document.querySelector('html')
-      .setAttribute('data-theme', 'light')
-  }
+  // if (val === 'dark' || localStorage.get('theme') === 'dark') {
+  //   theme.value = 'dark'
+  //   document.querySelector('html')
+  //     .setAttribute('data-theme', 'dark')
+  // }
+  // else {
+  //   theme.value = 'light'
+  //   document.querySelector('html')
+  //     .setAttribute('data-theme', 'light')
+  // }
+  theme.value = 'dark'
+  document.querySelector('html')
+    .setAttribute('data-theme', 'dark')
 }, { immediate: true })
 
 provide('isRealDark', computed(() => theme.value === 'dark'))

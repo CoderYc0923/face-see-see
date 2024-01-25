@@ -68,7 +68,7 @@ export default ({ command, mode }: ConfigEnv): UserConfig => {
         enabled: false,
         config: {
           maxLogNumber: 1000,
-          theme: 'light',
+          theme: 'dark',
         },
       }),
 

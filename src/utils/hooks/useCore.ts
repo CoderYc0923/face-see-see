@@ -2,7 +2,7 @@ import type { Menu } from "@/typing"
 import getMockData from "../configs/mock"
 
 /**
- * 判断模式的核心方法
+ * 判断模式的核心类
  */
 class UseCore {
   arModel: string

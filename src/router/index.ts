@@ -5,6 +5,7 @@ import 'nprogress/nprogress.css'
 
 // 导入路由组件
 import main from '@/views/index.vue'
+import core from '@/views/core/core.vue'
 
 NProgress.configure({ showSpinner: true, parent: '#app' })
 
@@ -15,6 +16,11 @@ const routes = [
     name: 'main',
     component: main,
   },
+  {
+    path: '/core',
+    name: 'core',
+    component: core,
+  }
 ]
 
 // 创建路由实例并传递 `routes` 配置

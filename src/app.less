@@ -38,3 +38,18 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
   /*兼容 IOS>11.2*/
 }
+
+/* 隐藏垂直滚动条 */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* 针对Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* 针对IE和Edge */
+body {
+  -ms-overflow-style: none;
+}

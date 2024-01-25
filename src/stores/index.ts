@@ -5,7 +5,8 @@ export const useStore = defineStore({
   persist: true,
   state: () => ({
     // light || dark
-    mode: '',
-    arModel: ''
+    mode: 'dark',
+    arModel: '',
+    showMenu: false
   }),
 })

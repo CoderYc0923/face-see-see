@@ -2,3 +2,7 @@
   font-family: "base-font";
   src: url("迷你繁方篆.ttf");
 }
+@font-face {
+  font-family: "ssdf-font";
+  src: url("ShangShouDongFangTi.ttf");
+}
