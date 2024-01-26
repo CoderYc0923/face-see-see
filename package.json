@@ -17,6 +17,7 @@
     "prepare": "npx husky install"
   },
   "dependencies": {
+    "@mediapipe/tasks-vision": "^0.10.9",
     "@vant/touch-emulator": "^1.4.0",
     "@vant/use": "^1.6.0",
     "axios": "^1.6.0",

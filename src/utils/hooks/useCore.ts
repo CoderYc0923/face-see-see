@@ -26,7 +26,7 @@ class UseCore {
   }
 
   /**
-   * 获取当前模式下的操作类
+   * 获取当前模式下的操作逻辑
    */
   getCurrentActionClass() {
 
