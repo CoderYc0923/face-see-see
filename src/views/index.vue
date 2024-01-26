@@ -6,6 +6,7 @@ const store = useStore()
 const themeTitle = ref<string>('🌙')
 const showMenu = ref<boolean>(store.showMenu)
 
+//test
 const onClickCell = (model: string) => {
   store.arModel = model
   router.push('core')
